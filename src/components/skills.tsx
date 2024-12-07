@@ -7,7 +7,7 @@ export default function Skills() {
     return (
         <>
 
-            <div className="p-6 md:mx-32 bg-white rounded-lg shadow-sm mt-6">
+            <div id="skills" className="p-6 md:mx-32 bg-white rounded-lg shadow-sm mt-6">
                 <h2 className="text-center text-3xl lg:text-4xl font-bold py-2 text-gray-900 relative">
                     SKILLS
                     <div className="flex items-center justify-center my-2">
@@ -26,7 +26,7 @@ export default function Skills() {
                         { name: "Next.js", level: 78 },
                         { name: "TypeScript", level: 70 },
                         { name: "Tailwind CSS", level: 80 },
-                        {name: "Firebase", level: 78}
+                        { name: "Firebase", level: 78 }
                     ].map((skill) => (
                         <div key={skill.name} className="flex flex-col space-y-2">
 

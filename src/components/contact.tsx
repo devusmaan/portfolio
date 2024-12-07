@@ -1,7 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+
 import Link from 'next/link';
-import { faEnvelope, faMapMarkerAlt, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import { FaGithub, FaInstagramSquare, FaLinkedin } from 'react-icons/fa';
+import { IoIosCall } from 'react-icons/io';
+import { SiGmail } from 'react-icons/si';
 
 export default function Contact() {
 
@@ -9,7 +10,7 @@ export default function Contact() {
     return (
 
         <>
-            <div className="pt-24 bg-slate-200">
+            <div id='contact' className="pt-12 bg-slate-200">
                 <h2 className="text-center text-3xl lg:text-4xl font-bold py-2 text-gray-900 relative">
                     CONTACT ME
                     <div className="flex items-center justify-center my-4">
@@ -28,16 +29,16 @@ export default function Contact() {
 
                         <div className="flex flex-col items-center space-y-6">
                             <div className="flex items-center space-x-6">
-                                <FontAwesomeIcon icon={faMapMarkerAlt} className="text-blue-600 text-2xl" />
                                 <span className="text-lg text-gray-700">Karachi, Pakistan</span>
                             </div>
-                            <div className="flex items-center space-x-6">
-                                <FontAwesomeIcon icon={faPhoneAlt} className="text-blue-600 text-2xl" />
-                                <span className="text-lg text-gray-700">+92-345-600-3925</span>
+                            <div className="flex items-center">
+                                <IoIosCall className='text-2xl text-gray-700' /> <span className="text-lg text-gray-700">
+                                    +92-345-600-3925</span>
                             </div>
-                            <div className="flex items-center space-x-6">
-                                <FontAwesomeIcon icon={faEnvelope} className="text-blue-600 text-2xl" />
-                                <span className="text-lg text-gray-700">devusmaan@gmail.com</span>
+                            <div className="flex items-center">
+                                <SiGmail className='text-2xl text-gray-700' />
+
+                                <span className="text-lg text-gray-700 ml-2">devusmaan@gmail.com</span>
                             </div>
                         </div>
 
@@ -47,24 +48,22 @@ export default function Contact() {
                             <div className="flex justify-center gap-3 mt-2">
                                 <Link
                                     href="https://www.instagram.com/usmanliftss"
-                                    target="_blank"
-                                    className="text-gray-700 hover:text-blue-500 transition-colors"
-                                >
-                                    <FontAwesomeIcon icon={faInstagram} className="text-2xl" />
+                                    target="_blank">
+                                    <FaInstagramSquare className='text-gray-700 text-2xl hover:text-blue-500 transition-colors' />
+
                                 </Link>
                                 <Link
                                     href="https://www.linkedin.com/in/devusmaan"
                                     target="_blank"
-                                    className="text-gray-700 hover:text-blue-500 transition-colors"
                                 >
-                                    <FontAwesomeIcon icon={faLinkedin} className="text-2xl" />
+                                    <FaLinkedin className='text-gray-700 text-2xl  hover:text-blue-500 transition-colors' />
+
                                 </Link>
                                 <Link
                                     href="https://github.com/devusmaan"
-                                    target="_blank"
-                                    className="text-gray-700 hover:text-blue-500 transition-colors"
-                                >
-                                    <FontAwesomeIcon icon={faGithub} className="text-2xl" />
+                                    target="_blank">
+                                    <FaGithub className="text-gray-700 text-2xl hover:text-blue-500 transition-colors" />
+
                                 </Link>
                             </div>
                         </div>

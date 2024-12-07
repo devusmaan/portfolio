@@ -5,7 +5,7 @@ export default function Resume() {
 
 
     return (
-        <div className="py-10 flex justify-center items-center">
+        <div id="resume" className=" flex justify-center items-center">
             <div className="max-w-4xl w-full rounded-lg overflow-hidden min-h-screen py-10 lg:mx-20 md:px-16 ">
                 <h2 className="text-center text-3xl lg:text-4xl font-bold py-2 text-gray-900 relative">
                     RESUME

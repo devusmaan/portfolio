@@ -5,7 +5,7 @@ export default function About() {
 
 
     return (
-        <div className="pt-7 px-4 md:px-20 lg:px-36">
+        <div className="pt-7 px-4 md:px-20 lg:px-36" id="about">
 
             <h2 className="text-center text-3xl lg:text-4xl font-bold py-2 text-gray-900 relative">
                 ABOUT
@@ -33,9 +33,6 @@ export default function About() {
                     <p className="font-bold text-3xl lg:text-4xl">FrontEnd Developer</p>
                     <div className="flex flex-col space-y-4 mt-4">
                         <p>
-                            <span className="font-bold text-gray-700">Birthday:</span> 15 Sep, 2006
-                        </p>
-                        <p>
                             <span className="font-bold text-gray-700">Gmail:</span> devusmaan@gmail.com
                         </p>
                         <p>
@@ -56,10 +53,7 @@ export default function About() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
                     <div className="space-y-6">
-                        <div className="flex items-center">
-                            <span className="font-semibold text-gray-700 w-32">Birthday:</span>
-                            <span className="text-gray-600">15 September, 2006</span>
-                        </div>
+
                         <div className="flex items-center">
                             <span className="font-semibold text-gray-700 w-32">Gmail:</span>
                             <span className="text-gray-600">devusmaan@gmail.com</span>
@@ -76,10 +70,7 @@ export default function About() {
                             <span className="font-semibold text-gray-700 w-32">City:</span>
                             <span className="text-gray-600">Karachi, Pakistan</span>
                         </div>
-                        <div className="flex items-center">
-                            <span className="font-semibold text-gray-700 w-32">Age:</span>
-                            <span className="text-gray-600">18</span>
-                        </div>
+
                         {/* <div className="flex items-center">
                             <span className="font-semibold text-gray-700 w-32">Freelance:</span>
                             <span className="text-gray-600">Available</span>
