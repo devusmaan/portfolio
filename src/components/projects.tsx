@@ -33,7 +33,7 @@ export default function RecentProjects() {
                     <span className="h-0.5 mt-0.5 bg-gray-300 w-16"></span>
                 </div>
             </h2>
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 lg:mx-5">
                 <div className="container mx-auto px-4">
                     <div className="flex justify-between items-center mb-10">
                         <h2 className="text-2xl font-bold text-gray-900">Recent Projects</h2>
