@@ -20,7 +20,7 @@ export default function About() {
             </p>
 
 
-            <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start space-y-6 lg:space-y-0 lg:space-x-10 mt-10">
+            <div className="flex flex-col lg:flex-row md:flex-row md:justify-around items-center justify-center lg:justify-start space-y-6 lg:space-y-0 lg:space-x-10 mt-10">
 
                 <img
                     className="w-40 h-40 md:w-60 md:h-60 lg:w-80 lg:h-80 object-cover rounded-full shadow-md"
@@ -29,7 +29,7 @@ export default function About() {
                 />
 
 
-                <div className="lg:text-left">
+                <div>
                     <p className="font-bold text-3xl lg:text-4xl">FrontEnd Developer</p>
                     <div className="flex flex-col space-y-4 mt-4">
                         <p>
@@ -71,10 +71,7 @@ export default function About() {
                             <span className="text-gray-600">Karachi, Pakistan</span>
                         </div>
 
-                        {/* <div className="flex items-center">
-                            <span className="font-semibold text-gray-700 w-32">Freelance:</span>
-                            <span className="text-gray-600">Available</span>
-                        </div> */}
+                        
                         <div className="flex items-center">
                             <span className="font-semibold text-gray-700 w-32">Study:</span>
                             <span className="text-gray-600">Continued</span>

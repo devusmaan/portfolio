@@ -30,7 +30,7 @@ export default function Portfolio() {
                     color: "#FFFFFF",
                     textShadow: "2px 2px 4px rgba(0, 0, 0, 0.6)",
                 }}
-                    className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-bold">
+                    className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold">
                     Muhammad Usman
                 </h1>
 
@@ -39,13 +39,13 @@ export default function Portfolio() {
                         color: "#DCE4FF",
                         textShadow: "2px 2px 4px rgba(0, 0, 0, 0.6)",
                     }}
-                    className="sm:text-2xl md:text-2xl lg:text-2xl font-medium">
+                    className="text-lg sm:text-2xl md:text-2xl lg:text-2xl font-medium">
                     I&apos;m a Frontend Developer
                 </h3>
 
 
                 <div
-                    className="flex space-x-6 text-lg sm:text-xl md:text-2xl lg:text-3xl"
+                    className="flex space-x-6 text-2xl sm:text-2xl md:text-2xl lg:text-3xl"
                 >
                     <Link
                         href="#"

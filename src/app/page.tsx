@@ -5,6 +5,7 @@ import Skills from "@/components/skills";
 import About from "@/components/about";
 import Portfolio from "@/components/header";
 import ScrollToTop from "@/components/scrolltop";
+import Projects from "@/components/projects";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <About />
       <Skills />
       <Resume />
+      <Projects />
       <Contact />
       <ScrollToTop />
     </>
