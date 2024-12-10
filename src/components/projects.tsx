@@ -24,7 +24,7 @@ const projects = [
 
 export default function RecentProjects() {
     return (
-        <section id="projects" className="py-5">
+        <section id="projects" className="my-10">
             <h2 className="text-center text-3xl lg:text-4xl font-bold py-2 text-gray-900 relative">
                 PROJECTS
                 <div className="flex items-center justify-center my-2">
@@ -34,15 +34,24 @@ export default function RecentProjects() {
                 </div>
             </h2>
             <div className="container mx-auto px-4">
-                <div className="flex justify-between items-center mb-10">
-                    <h2 className="text-2xl font-bold text-gray-900">Recent Projects</h2>
-                    <a
-                        href="#"
-                        className="text-orange-500 font-semibold hover:underline flex items-center"
-                    >
-                        View All <FiArrowRight className="ml-2" />
-                    </a>
+                <div className="container mx-auto px-4">
+                    <div className="flex justify-between items-center mb-10">
+                        <h2 className="text-2xl font-bold text-gray-900">Recent Projects</h2>
+                        <Link
+                            href="https://github.com/devusmaan?tab=repositories"
+                            target="_blank"
+                            className="text-orange-500 font-semibold hover:underline flex items-center"
+                        >
+                            View All <FiArrowRight className="ml-2" />
+                        </Link>
+                    </div>
+
+                    
+                    <p className="text-gray-600 text-lg mb-8">
+                        Want to explore more projects? Click "View All" to check out the full list on our GitHub repository.
+                    </p>
                 </div>
+
 
 
                 <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 lg:mx-14">

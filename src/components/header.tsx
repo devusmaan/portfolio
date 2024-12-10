@@ -23,7 +23,7 @@ export default function Portfolio() {
 
 
             <div
-                className="w-full lg:w-5/6 flex sm:flex max-sm:items-center max-md:items-center flex-col justify-center bg-cover bg-center space-y-4 lg:space-y-6 px-4 lg:px-6"
+                className="w-full lg:w-5/6 flex sm:flex max-sm:items-center max-md:items-center flex-col justify-center md:mx-36 bg-cover bg-center space-y-4 lg:space-y-6"
             >
 
                 <h1 style={{
