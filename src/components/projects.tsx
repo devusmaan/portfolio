@@ -48,7 +48,7 @@ export default function RecentProjects() {
 
                     
                     <p className="text-gray-600 text-lg mb-8">
-                        Want to explore more projects? Click &quot;View All&quot; to check out the full list on our GitHub repository.
+                        Want to explore more projects? Click &quot;View All&quot; to check out the full list on my GitHub repository.
                     </p>
                 </div>
 

@@ -132,6 +132,16 @@ export default function Resume() {
 
                     </div>
                 </div>
+                <div className="text-center mt-6">
+                    <p className="mb-4 text-lg font-medium">To download the resume in PDF format, click the button below:</p>
+                    <a
+                        download
+                        href="/Usman-Resume.pdf"
+                        className="inline-block px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+                        Download Resume
+                    </a>
+                </div>
+
             </div>
         </div>
 
