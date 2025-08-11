@@ -34,11 +34,18 @@ export default function ScrollToTop() {
                 <div className="fixed bottom-20 right-6 z-50">
                     <button
                         onClick={scrollToTop}
-                        className="flex items-center justify-center w-12 h-12 bg-slate-200 text-gray-700 rounded-full shadow-md hover:bg-slate-400 hover:shadow-lg transition"
+                        className="flex items-center justify-center w-12 h-12 
+                   bg-gradient-to-br from-blue-500 to-blue-700 
+                   text-white rounded-full shadow-lg 
+                   transition-all duration-300 
+                   hover:scale-110 
+                   hover:shadow-[0_0_20px_rgba(59,130,246,0.8)] 
+                   animate-pulse"
                     >
-                        <FaAngleUp className="text-xl" />  
+                        <FaAngleUp className="text-2xl" />
                     </button>
                 </div>
+
             )}
         </>
     );

@@ -1,59 +1,50 @@
+    import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
+    import { SiNextdotjs, SiTypescript, SiTailwindcss, SiFirebase } from "react-icons/si";
 
+    export default function Skills() {
+        const skills = [
+            { name: "HTML", icon: <FaHtml5 className="text-orange-500 drop-shadow-[0_0_8px_#FFA500]" /> },
+            { name: "CSS", icon: <FaCss3Alt className="text-blue-500 drop-shadow-[0_0_8px_#00BFFF]" /> },
+            { name: "JavaScript", icon: <FaJs className="text-yellow-400 drop-shadow-[0_0_8px_#FFD700]" /> },
+            { name: "React.js", icon: <FaReact className="text-cyan-400 drop-shadow-[0_0_8px_#00FFFF]" /> },
+            { name: "Next.js", icon: <SiNextdotjs className="text-white drop-shadow-[0_0_8px_#CCCCCC]" /> },
+            { name: "TypeScript", icon: <SiTypescript className="text-blue-400 drop-shadow-[0_0_8px_#1E90FF]" /> },
+            { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400 drop-shadow-[0_0_8px_#20B2AA]" /> },
+            { name: "Firebase", icon: <SiFirebase className="text-yellow-500 drop-shadow-[0_0_8px_#FFD54F]" /> },
+        ];
 
-export default function Skills() {
+        return (
+            <section
+        id="skills"
+        className="relative py-20 px-6 md:px-20 bg-[#0a0a0a] text-gray-200 overflow-hidden"
+        >
+            
+                <div className="absolute inset-0 animate-pulse"></div>
 
-
-
-    return (
-        <>
-
-            <div id="skills" className="p-6 md:mx-32 bg-white rounded-lg shadow-sm mt-6">
-                <h2 className="text-center text-3xl lg:text-4xl font-bold py-2 text-gray-900 relative">
+                <h2 className="text-center text-3xl lg:text-4xl font-bold mb-12 relative z-10">
                     SKILLS
-                    <div className="flex items-center justify-center my-2">
-                        <span className="h-0.5 mt-0.5 bg-gray-300 w-16"></span>
-                        <span className="h-1 bg-blue-600 w-8"></span>
-                        <span className="h-0.5 mt-0.5 bg-gray-300 w-16"></span>
+                    <div className="flex items-center justify-center mt-2 mb-6">
+                        <span className="h-0.5 bg-gray-500 w-16"></span>
+                        <span className="h-1 bg-cyan-400 w-8 mx-1 shadow-[0_0_10px_#00FFFF]"></span>
+                        <span className="h-0.5 bg-gray-500 w-16"></span>
                     </div>
                 </h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-                    {[
-                        { name: "HTML", level: 90 },
-                        { name: "CSS", level: 75 },
-                        { name: "JavaScript", level: 85 },
-                        { name: "React.js", level: 80 },
-                        { name: "Next.js", level: 78 },
-                        { name: "TypeScript", level: 70 },
-                        { name: "Tailwind CSS", level: 80 },
-                        { name: "Firebase", level: 78 }
-                    ].map((skill) => (
-                        <div key={skill.name} className="flex flex-col space-y-2">
-
-                            <div className="flex justify-between items-center">
-                                <span className="text-lg text-gray-700 font-semibold">
-                                    {skill.name}
-                                </span>
-                                <span className="text-sm text-gray-500 font-medium">
-                                    {skill.level}%
-                                </span>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 relative z-10">
+                    {skills.map((skill) => (
+                        <div
+                            key={skill.name}
+                            className="group flex flex-col items-center justify-center space-y-3 p-6 bg-white/5 rounded-xl backdrop-blur-md shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-[0_0_20px_rgba(0,255,255,0.6)]"
+                        >
+                            <div className="text-5xl transition-transform duration-300 group-hover:scale-125 group-hover:rotate-6">
+                                {skill.icon}
                             </div>
-
-                            <div className="w-full bg-gray-300 rounded-full h-2">
-                                <div
-                                    className="bg-gradient-to-r from-blue-500 to-blue-700 h-2 rounded-full"
-                                    style={{ width: `${skill.level}%` }}
-                                ></div>
-                            </div>
+                            <p className="text-lg font-medium">{skill.name}</p>
                         </div>
                     ))}
                 </div>
-            </div>
+            </section>
+        );
+    }
+    
 
-
-
-
-
-        </>
-    )
-}
